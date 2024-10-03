@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .carousel-item {
+            height: 18rem;
+            color: black;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: papayawhip;
+            z-index: 1;
+        }
+
+        .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 30rem;
+            padding-bottom: 50px;
+            z-index: 2;
+        }
+
+
+        .cardio {
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+
+        }
+
+        h1 {
+            font-size: 7rem;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: paleturquoise;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <a class="navbar-brand" href="#">PEMOGRAMAN</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/apen_146/">Kontak</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Tugas
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="tugas.html">Tugas 1</a>
+                                <a class="dropdown-item" href="tugas2.html">Tugas 2</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <h1 style="font-family:fantasy;">SELAMAT DATANG</h1>
+                        <h2
+                            style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                            Ayo belajar bersama-sama tentang HTML, CSS dan JavaScript</h2>
+                        <a class="btn btn-primary" href="tugas2.html" role="button">Daftar</a>
+                        <a class="btn btn-success" href="#" role="button">Masuk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardio">
+                <div class="card" style="width: 40rem;">
+                    <img src="https://www.techfor.id/wp-content/uploads/2019/12/html.png" class="card-img-top"
+                        alt="error">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">HyperText Markup Language (HTML) adalah bahasa markah standar untuk dokumen
+                            yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi
+                            seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript,
+                            dan PHP.</p>
+                        <a href="https://id.wikipedia.org/wiki/HTML" class="btn btn-warning">Kunjungi</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 40rem;">
+                    <img src="https://belajarapaaja.net/wp-content/uploads/2022/06/css.png" class="card-img-top"
+                        alt="error">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Cascading Style Sheet (disingkat CSS) adalah bahasa lembar gaya yang
+                            digunakan sebagai penentu presentasi dan gaya dokumen yang ditulis dalam bahasa markup
+                            seperti HTML dan XML. CSS termasuk ke dalam teknologi dasar World Wide Web, bersama dengan
+                            HTML dan JavaScript.</p>
+                        <a href="https://id.wikipedia.org/wiki/Cascading_Style_Sheets"
+                            class="btn btn-primary">Kunjungi</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 40rem;">
+                    <img src="https://itbox.id/wp-content/uploads/2022/10/Bootstrap-5-e1665110120351.webp"
+                        class="card-img-top" alt="error">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk
+                            merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML
+                            dan CSS
+                        </p>
+                        <a href="https://id.wikipedia.org/wiki/Bootstrap_(kerangka_kerja)"
+                            class="btn btn-purple">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <marquee behavior="" direction="">
+            <h4>&copyStephen Albert, 241402017</h4>
+        </marquee>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

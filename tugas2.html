@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+<style>
+    body {
+        background-color: palevioletred;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .h11 h1 {
+        color: purple;
+        font-size: 33px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .div1 {
+        background-color: pink;
+        width: 600px;
+        margin: auto;
+        border-radius: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .area1 {
+        height: 35px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tableinput input {
+        height: 30px;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .tableinput2 input {
+        height: 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tablepadding {
+        border-spacing: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+        background-color: papayawhip;
+    }
+
+    .tr1 {
+        padding-top: 50%;
+    }
+</style>
+
+<body>
+    <form action="#">
+        <div class="div1">
+            <div class="h11">
+                <h1>Login</h1>
+            </div>
+            <table class="tablepadding">
+                <tr class="tr1">
+                    <td width="50%">
+                        <label for="uname">
+                            <h3>Username</h3>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="50%" class="tableinput">
+                        <input type="text" id="uname" name="username">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="pass">
+                            <h3>Password</h3>
+                        </label></td>
+                </tr>
+
+                <tr>
+                    <td class="tableinput"><input type="password" id="pass" name="password"></td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+            </table>
+
+            <table class="tablepadding">
+                <div class="h11">
+                    <h1 align="center">Pendaftaran</h1>
+                </div>
+
+                <tr>
+                    <td><label for="name">Nama</label></td>
+                    <td class="tableinput2"><input placeholder="Nama lengkap anda" type="text" id="name" name="nama">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="nim">NIM</label></td>
+                    <td class="tableinput2"><input placeholder="NIM anda" type="text" id="nim" name="nim">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Jenis Kelamin</label></td>
+                    <td><input type="radio" name="gender" id="lk">Pria</td>
+
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td><input type="radio" name="gender" id="pr">Perempuan</td>
+                </tr>
+
+                <tr>
+                    <td><label for="date">Tanggal Lahir</label></td>
+                    <td><input type="date" name="tanggallahir" id="date"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="agama">Agama</label></td>
+                    <td class="tableinput2"><select name="jurusan" id="jurusan">
+                            <option align="center" value="agama">-- Pilih Agama --</option>
+                            <option align="center" value="islam">Islam</option>
+                            <option align="center" value="kristen">Kristen</option>
+                            <option align="center" value="katolik">Katolik</option>
+                            <option align="center" value="hindu">Hindu</option>
+                            <option align="center" value="buddha">Buddha</option>
+                            <option align="center" value="konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="alamat">Alamat</label></td>
+                    <td><textarea placeholder="Alamat anda" class="area1" name="alamat" id="alamat"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td class="tableinput2"><input placeholder="Email anda" type="email" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="telp">Nomor Telepon</label></td>
+                    <td class="tableinput2"><input placeholder="Nomor telepon anda" type="text" name="telp" id="telp">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="prodi">Program Studi</label></td>
+                    <td><select name="prodi" id="prodi">
+                            <option value="prodi">-- Pilih Program Studi --</option>
+                            <option value="ilkom">Ilmu Komputer</option>
+                            <option value="ti">Teknologi Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="hobi">Hobi</label></td>
+                    <td><input type="checkbox" name="hobi" id="hobi">Olahraga</td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td><input type="checkbox" name="hobi" id="hobi">Travelling</td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td><input type="checkbox" name="hobi" id="hobi">Musik</td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td><input type="checkbox" name="hobi" id="hobi">Memasak</td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td><input type="checkbox" name="hobi" id="hobi">Menari</td>
+                </tr>
+
+            </table>
+
+            <div style="padding-left: 20px; padding-bottom: 15px;"><button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
